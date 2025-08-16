@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>PokeApi</h1>
+            <p>Busca un Pokémon por su nombre o selecciona uno de la lista.</p>
+            <input
+                type="text"
+                id="pokemonName"
+                placeholder="Escribe el nombre del Pokémon"
+            />
+            <button id="searchButton">Buscar</button>
+            <div id="pokemonCard" class="card hidden">
+                <img id="pokemonImage" alt="Imagen del Pokémon" />
+                <h2 id="pokemonTitle"></h2>
+                <p>
+                    <strong>Habilidades:</strong>
+                    <span id="pokemonAbilities"></span>
+                </p>
+            </div>
+            <p id="errorMessage" class="error hidden">
+                No se encontró el Pokémon. Intenta de nuevo.
+            </p>
+            <h2>Pokémon Populares</h2>
+            <ul id="pokemonList" class="pokemon-list">
+                <li class="pokemon-item">Pikachu</li>
+                <li class="pokemon-item">Charmander</li>
+                <li class="pokemon-item">Bulbasaur</li>
+                <li class="pokemon-item">Squirtle</li>
+                <li class="pokemon-item">Eevee</li>
+            </ul>
+        </div>
+        <script src="pokeApi.js"></script>
+    </body>
+</html>
